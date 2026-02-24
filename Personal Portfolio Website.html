@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshit Upadhyay | Portfolio</title>
+<link rel="stylesheet" href="Personal Portfolio Website.css">
+</head>
+<body>
+
+<nav>
+    <h2>MyPortfolio</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleDarkMode()">🌙</button>
+</nav>
+
+<section id="home">
+    <h1>Hi, I'm Harshit 👋</h1>
+    <h2><span id="typing"></span></h2>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>BCA Student & Web Developer skilled in HTML, CSS, JavaScript.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('game')">Game</button>
+    </div>
+
+    <div class="project-container">
+        <div class="project web">Responsive Landing Page</div>
+        <div class="project game">Tic Tac Toe Game</div>
+        <div class="project web">Stopwatch Web App</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name"><br>
+        <input type="email" id="email" placeholder="Your Email"><br>
+        <textarea id="message" placeholder="Your Message"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<script src="Personal Portfolio Website.js"></script>
+</body>
+</html>
